@@ -15,3 +15,11 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+
+Cypress.on('uncaught:exception', (err, runnable) => false)
+
+const dayjs = require('dayjs')
+
+Cypress.dayjs = dayjs
+
+require('cypress-grep')()

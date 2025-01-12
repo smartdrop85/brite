@@ -5,7 +5,11 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    testIsolation: true,
+    defaultCommandTimeout: 10000,
     baseUrl: "https://www.imdb.com/",
+    screenshotsFolder: 'screenshots',
+    capture: 'fullPage',
     watchForFileChanges: false
-  },
-});
+  }
+})

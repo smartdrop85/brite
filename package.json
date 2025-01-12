@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run -- browser chrome",
+    "test-firefox": "npx cypress run --browser firefox --env grepTags=firefox"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.17.0"
+    "cypress": "^13.17.0",
+    "dayjs": "^1.11.13",
+    "cypress-grep": "^2.6.1"
   }
 }
