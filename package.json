@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run -- browser chrome",
-    "test-firefox": "npx cypress run --browser firefox --env grepTags=firefox"
+    "test": "npx cypress run --spec cypress/e2e/**/* -b chrome",
+    "test-firefox": "npx cypress run --spec cypress/e2e/**/* -b firefox --env grepTags=firefox",
+    "test-api": "npx cypress run --spec cypress/api/**/*"
   },
   "author": "",
   "license": "ISC",

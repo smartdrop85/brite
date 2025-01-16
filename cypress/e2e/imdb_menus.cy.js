@@ -7,7 +7,7 @@ describe('Menus and operations', () => {
         cy.get(imdb.openMenuButton).click()
     })
 
-    it('should click set rate', () => {
+    it('2. should click set rate', () => {
         cy.contains(imdb.expandMenuItems, 'Movies').click()
         cy.contains(imdb.innerMenuItems, 'Top Box Office').click()
         cy.get(imdb.listElementsHeaders).eq(1).invoke('text').then((text) => {
@@ -27,7 +27,7 @@ describe('Menus and operations', () => {
         cy.get(imdb.signinOptions).should('be.visible')
     })
 
-    it('should check breaking bad photos', () => {
+    it('3. should check breaking bad photos', () => {
         cy.contains(imdb.expandMenuItems, 'TV Shows').click()
         cy.contains(imdb.innerMenuItems, 'Top 250 TV Shows').click()
         cy.contains(imdb.listElementsHeaders, 'Breaking Bad').click()

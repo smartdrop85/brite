@@ -1,6 +1,6 @@
 import imdb from '../objects/imdb.obj.js'
 
-describe('Search: Nicolas Cage', { tags: 'firefox' }, () => {
+describe('1. Search: Nicolas Cage', { tags: 'firefox' }, () => {
     // known failure: no completed upcoming projects => skip and jira link :)
     it('should search and check profile', () => {
         cy.visit('')

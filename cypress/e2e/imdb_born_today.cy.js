@@ -19,7 +19,7 @@ describe('Born today filters', () => {
         cy.get(filterSelectorToday).click()
     })
 
-    it('should filter by Born yesterday and take screenshot', () => {
+    it('4. should filter by Born yesterday and take screenshot', () => {
         cy.get(imdb.birthdayAccordion).should('be.visible')
             .and('have.text', 'Birthday')
         cy.get(imdb.birthdayAccordion).click()
@@ -37,7 +37,7 @@ describe('Born today filters', () => {
         cy.screenshot()
     })
 
-    it('should filter by Birth date 40 years ago and take screenshot', () => {
+    it('5. should filter by Birth date 40 years ago and take screenshot', () => {
         cy.get(imdb.birthDateAccordion).should('be.visible')
             .and('contain.text', 'Birth date')
         cy.get(imdb.birthDateAccordion).click()
