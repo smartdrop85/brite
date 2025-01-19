@@ -11,8 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cucumber": "^6.0.7",
     "cypress": "^13.17.0",
-    "dayjs": "^1.11.13",
-    "cypress-grep": "^2.6.1"
+    "cypress-grep": "^2.6.1",
+    "dayjs": "^1.11.13"
   }
 }
